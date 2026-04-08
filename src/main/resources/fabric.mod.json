@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "recordwathe",
+  "version": "${version}",
+  "name": "recordWathe",
+  "description": "Ch Ju o st as!",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/recordwathe/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "top.dontplay.recordwathe.client.RecordwatheDataGenerator"
+    ],
+    "main": [
+      "top.dontplay.recordwathe.Recordwathe"
+    ],
+    "client": [
+      "top.dontplay.recordwathe.client.RecordwatheClient"
+    ]
+  },
+  "mixins": [
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
